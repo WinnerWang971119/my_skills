@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Installs skills into ~/.claude/skills/ and ~/.codex/skills/
-# Usage: curl -fsSL https://raw.githubusercontent.com/<YOUR_USER>/<YOUR_REPO>/main/install.sh | bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/WinnerWang971119/my_skills/main/install.sh | bash
 # Override repo via env: REPO=user/repo BRANCH=main bash install.sh
 
 set -euo pipefail
 
-REPO="${REPO:-<YOUR_USER>/<YOUR_REPO>}"
+REPO="${REPO:-WinnerWang971119/my_skills}"
 BRANCH="${BRANCH:-main}"
 CLAUDE_DIR="${HOME}/.claude/skills"
 CODEX_DIR="${HOME}/.codex/skills"

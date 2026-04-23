@@ -1,12 +1,12 @@
 # Installs skills into ~/.claude/skills/ and ~/.codex/skills/
-# Usage: iwr -useb https://raw.githubusercontent.com/<YOUR_USER>/<YOUR_REPO>/main/install.ps1 | iex
+# Usage: iwr -useb https://raw.githubusercontent.com/WinnerWang971119/my_skills/main/install.ps1 | iex
 # Override via env: $env:REPO="user/repo"; $env:BRANCH="main"; iwr ... | iex
 
 $ErrorActionPreference = 'Stop'
 $ProgressPreference   = 'SilentlyContinue'  # speeds up Invoke-WebRequest dramatically
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-$Repo   = if ($env:REPO)   { $env:REPO }   else { '<YOUR_USER>/<YOUR_REPO>' }
+$Repo   = if ($env:REPO)   { $env:REPO }   else { 'WinnerWang971119/my_skills' }
 $Branch = if ($env:BRANCH) { $env:BRANCH } else { 'main' }
 
 $ClaudeDir = Join-Path $HOME '.claude\skills'
