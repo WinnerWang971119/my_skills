@@ -12,20 +12,20 @@ Both tools use the same `SKILL.md` format, so each skill folder installs into bo
 ### macOS / Linux
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/<YOUR_USER>/<YOUR_REPO>/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/WinnerWang971119/my_skills/main/install.sh | bash
 ```
 
 ### Windows (PowerShell — preferred on Windows)
 
 ```powershell
-iwr -useb https://raw.githubusercontent.com/<YOUR_USER>/<YOUR_REPO>/main/install.ps1 | iex
+iwr -useb https://raw.githubusercontent.com/WinnerWang971119/my_skills/main/install.ps1 | iex
 ```
 
 Re-run anytime to pull the latest version. The installer overwrites existing skills with the same name.
 
 > **Tip:** `curl ... | bash` and `iwr ... | iex` execute remote scripts directly. To inspect first:
 > ```bash
-> curl -fsSL https://raw.githubusercontent.com/<YOUR_USER>/<YOUR_REPO>/main/install.sh | less
+> curl -fsSL https://raw.githubusercontent.com/WinnerWang971119/my_skills/main/install.sh | less
 > ```
 
 ## Skills included
